@@ -119,10 +119,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 constraints: BoxConstraints.expand(
                   height: Theme.of(context).textTheme.headlineMedium!.fontSize! * 1.1 + 200.0,
                 ),
-                padding: const EdgeInsets.all(8.0),
-                color: Colors.blue[600],
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.all(10.0),
+                color: Colors.black,
                 alignment: Alignment.center,
-                transform: Matrix4.rotationZ(0.1),
+                /*transform: Matrix4.rotationZ(0.1),*/
                 child: Text('Hello World',
                   style: Theme.of(context)
                       .textTheme
