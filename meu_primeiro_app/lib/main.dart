@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Minha página faz qualquer coisa'),
     );
   }
 }
@@ -117,12 +117,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
                 constraints: BoxConstraints.expand(
-                  height: Theme.of(context).textTheme.headlineMedium!.fontSize! * 1.1 + 200.0,
+                  height: 300,
+                  width: 300,
                 ),
                 padding: const EdgeInsets.all(10.0),
                 margin: const EdgeInsets.all(10.0),
                 color: Colors.black,
-                alignment: Alignment.center,
+                alignment: Alignment.bottomLeft,
                 /*transform: Matrix4.rotationZ(0.1),*/
                 child: Text('Hello World',
                   style: Theme.of(context)
