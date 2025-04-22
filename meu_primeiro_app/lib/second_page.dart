@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp2());
+  runApp(MinhaSegundaPagina());
 }
 
-class MyApp2 extends StatelessWidget {
-  const MyApp2({super.key});
+class MinhaSegundaPagina extends StatelessWidget {
+  const MinhaSegundaPagina({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

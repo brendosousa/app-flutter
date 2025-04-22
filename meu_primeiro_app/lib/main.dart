@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:meu_primeiro_app/second_page.dart';
 
-void main() {
+/*void main() {
+
   runApp(MyApp());
-}
+}*/
+
+void main() => runApp(
+  MaterialApp(
+    initialRoute: '/',
+    routes: {
+      '/': (context) => MyApp(),
+      '/second_page': (context) => MinhaSegundaPagina(),
+    },
+  ),
+);
 
 
 class MyApp extends StatelessWidget {
@@ -133,13 +144,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       .headlineMedium!
                       .copyWith(color: Colors.white)),
             ),
-            /*ElevatedButton(
+            ElevatedButton(
               child: Text("Outra página"),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MyApp2()),
-              ),
-            ),*/  
+              onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MinhaSegundaPagina()),
+                );
+              }
+            ),  
           ]
         ),
 
