@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:meu_primeiro_app/second_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -118,19 +120,26 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
                 constraints: BoxConstraints.expand(
                   height: 300,
-                  width: 300,
+                  width: 300
                 ),
                 padding: const EdgeInsets.all(10.0),
                 margin: const EdgeInsets.all(10.0),
                 color: Colors.black,
-                alignment: Alignment.bottomLeft,
+                alignment: Alignment.center,
                 /*transform: Matrix4.rotationZ(0.1),*/
                 child: Text('Hello World',
                   style: Theme.of(context)
                       .textTheme
                       .headlineMedium!
                       .copyWith(color: Colors.white)),
-            )
+            ),
+            /*ElevatedButton(
+              child: Text("Outra página"),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MyApp2()),
+              ),
+            ),*/  
           ]
         ),
 
