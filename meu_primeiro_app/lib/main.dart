@@ -1,10 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:meu_primeiro_app/second_page.dart';
+import 'package:meu_primeiro_app/pages/second_page.dart';
+
+//Aqui roda o app
+void main() {
+  runApp(Home());
+}
+
+//Aqui é construída a classe "widget" que vai rodar a tela inicial
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Minha página faz qualquer coisa',
+      home: TelaInicial(),
+    );
+  }
+}
 
 /*void main() {
 
   runApp(MyApp());
-}*/
+}
 
 void main() => runApp(
   MaterialApp(
@@ -135,14 +152,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 padding: const EdgeInsets.all(10.0),
                 margin: const EdgeInsets.all(10.0),
-                color: Colors.black,
+                color: Colors.white,
                 alignment: Alignment.center,
                 /*transform: Matrix4.rotationZ(0.1),*/
                 child: Text('Hello World',
                   style: Theme.of(context)
                       .textTheme
                       .headlineMedium!
-                      .copyWith(color: Colors.white)),
+                      .copyWith(color: Colors.black)),
             ),
             ElevatedButton(
               child: Text("Outra página"),
@@ -178,4 +195,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );   // This trailing comma makes auto-formatting nicer for build methods.
       
   }
-}
+}*/
