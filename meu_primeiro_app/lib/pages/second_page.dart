@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meu_primeiro_app/pages/other_page.dart';
 
 //Aqui é criado o app
 class TelaInicial extends StatefulWidget {
@@ -27,6 +28,11 @@ class _TelaInicialState extends State<TelaInicial> {
     });
   }
 
+  void _mudar() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => TelaJogar()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,8 +45,13 @@ class _TelaInicialState extends State<TelaInicial> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            TextButton(
+                onPressed: () { _mudar();},
+                child: Text('Ir para a próxima página'),
+            )
           ]
         )),
+
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
@@ -59,7 +70,6 @@ class _TelaInicialState extends State<TelaInicial> {
           ),
         ],
       ),  
-
     );
 
   }
