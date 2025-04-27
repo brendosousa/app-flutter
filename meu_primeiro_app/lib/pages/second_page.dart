@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_primeiro_app/pages/other_page.dart';
+import 'package:meu_primeiro_app/pages/pokedex_page.dart';
 
 //Aqui é criado o app
 class TelaInicial extends StatefulWidget {
