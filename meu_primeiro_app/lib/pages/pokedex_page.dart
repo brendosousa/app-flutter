@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class TelaJogar extends StatefulWidget {
@@ -15,7 +13,7 @@ class _TelaJogarState extends State<TelaJogar> {
       appBar: AppBar(
         title: Text('Pokedex'),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -38,6 +36,7 @@ class _TelaJogarState extends State<TelaJogar> {
               },
               child: Text('Pesquisar'),
             ),
+            Image.asset('assets/images/Pokedex.png'),
           ],
         ),
       ),
