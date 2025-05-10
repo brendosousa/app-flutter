@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TelaJogar extends StatefulWidget {
+  const TelaJogar({super.key});
+
   @override
   _TelaJogarState createState() => _TelaJogarState();
 }

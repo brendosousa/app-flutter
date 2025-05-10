@@ -3,6 +3,8 @@ import 'package:meu_primeiro_app/pages/pokedex_page.dart';
 
 //Aqui é criado o app
 class TelaInicial extends StatefulWidget {
+  const TelaInicial({super.key});
+
   @override
   _TelaInicialState createState() => _TelaInicialState();
 }
