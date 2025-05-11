@@ -7,6 +7,9 @@ class TelaJogar extends StatefulWidget {
   _TelaJogarState createState() => _TelaJogarState();
 }
 
+TextEditingController myController = TextEditingController();
+String _valorDigitado = '';
+
 class _TelaJogarState extends State<TelaJogar> {
   @override
   Widget build(BuildContext context) {
@@ -23,6 +26,7 @@ class _TelaJogarState extends State<TelaJogar> {
               width: 250,
               height: 60,
               child: TextFormField(
+                controller: myController,
                 decoration: const InputDecoration(hintText: 'Digite o nome do Pokemon'),
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
@@ -34,10 +38,15 @@ class _TelaJogarState extends State<TelaJogar> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
+                setState(() {
+                  _valorDigitado = myController.text;
+                });
               },
               child: Text('Pesquisar'),
+       
             ),
+            const SizedBox(height: 20),
+            Text('Valor digitado: $_valorDigitado'),
             Image.asset('assets/images/Pokedex.png'),
           ],
         ),
