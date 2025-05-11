@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PokemonCardData extends StatelessWidget {
-  
+
   final String image;
   final String name;
   const PokemonCardData({

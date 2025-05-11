@@ -4,18 +4,22 @@ import 'package:meu_primeiro_app/models/pokemon_card_data.dart';
 class PokemonCard extends StatelessWidget {
   final int id;
   final String name;
-  final String image;    const PokemonCard({
+  final String image;    
+  const PokemonCard({
         Key? key,
         required this.id,
         required this.name,
         required this.image,
-    }) : super(key: key);    BoxDecoration getContainerDecoration() => BoxDecoration(
+    }) : super(key: key);    
+    BoxDecoration getContainerDecoration() => BoxDecoration(
         borderRadius: BorderRadius.circular(7),
         border: Border.all(
           color: Colors.grey[300]!,
           width: 1,
         ),
-      );  @override
+      );
+
+  @override
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,

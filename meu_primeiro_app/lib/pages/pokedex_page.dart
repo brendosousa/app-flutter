@@ -43,11 +43,20 @@ class _TelaJogarState extends State<TelaJogar> {
                 });
               },
               child: Text('Pesquisar'),
-       
             ),
             const SizedBox(height: 20),
             Text('Valor digitado: $_valorDigitado'),
-            Image.asset('assets/images/Pokedex.png'),
+            //Image.asset('assets/images/Pokedex.png'),
+            Container(
+              height: 850,
+              width: 600,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/Pokedex.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ],
         ),
       ),
