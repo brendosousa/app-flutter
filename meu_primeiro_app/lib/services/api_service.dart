@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 
 import 'repository.dart';
 
+//Esse serviço deve fazer a requisição para a API do pokemon
 class ApiService {
   static const baseUrl = 'pokeapi.co/api/v2';
   static const nome = 'ditto';

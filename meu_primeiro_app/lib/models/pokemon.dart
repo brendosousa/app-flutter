@@ -1,3 +1,4 @@
+//Esse deve ser um modelo para a classe Pokemon
 class Pokemon {
     int id;
     String name;

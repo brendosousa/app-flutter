@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_primeiro_app/models/pokemon_card_data.dart';
 
+//Esse deve ser um componente que vai ser usado para mostrar os cards de pokemons
 class PokemonCard extends StatelessWidget {
   final int id;
   final String name;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Esse componente vai ser usado para mostrar os dados dos cards de pokemons
 class PokemonCardData extends StatelessWidget {
 
   final String image;
